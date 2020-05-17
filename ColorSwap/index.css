@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-color: #b5b19259; */
+  background-color: #aaa;
+  font-family: 'Squada One', cursive;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.color-box {
+  width: 400px;
+  height: 200px;
+  background-color: #101321;
+  border-radius: 20px;
+  box-shadow: 3px 3px 1px 2px #fff;
+}
+
+.color-options-bar {
+  width: 300px;
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.color-option {
+  width: 40px;
+  height: 40px;
+  border-radius: 50% 50%;
+  box-shadow: 1px 1px 1px 2px #fff;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.color-option:hover {
+  transform: scale(1.1);
+}
+
+.option-1 {
+  background-color: rgb(199, 149, 56);
+}
+
+.option-2 {
+  background-color: #101321;
+}
+
+.option-3 {
+  background-color: #7d5a5a;
+}
