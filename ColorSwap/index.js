@@ -11,5 +11,12 @@ addEvents();
 function changeBgColor(classToBeApplied) {
 	const colorBox = document.querySelector('.color-box');
 	colorBox.classList = `color-box ${classToBeApplied}`;
-	// console.log('classes:: ', colorBox.classList, classToBeApplied);
+	const colorOptions = document.querySelectorAll('.color-option');
+	colorOptions.forEach(node => {
+		if (node.classList.toString().includes(classToBeApplied)) {
+			node.classList.add('selected');
+		} else {
+			node.classList.remove('selected');
+		}
+	});
 }

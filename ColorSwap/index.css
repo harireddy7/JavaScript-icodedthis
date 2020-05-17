@@ -4,9 +4,7 @@
 }
 
 body {
-  /* background-color: #b5b19259; */
-  background-color: #aaa;
-  font-family: 'Squada One', cursive;
+  font-family: 'Carter One', cursive;
 }
 
 .text-center {
@@ -15,22 +13,29 @@ body {
 
 .container {
   height: 100vh;
+  background-color: #03081f;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.project {
+  font-weight: 500;
+  color: #88900d;
+}
+
 .title {
   margin-bottom: 30px;
   font-size: 40px;
   font-weight: 400;
+  color: #c4c4d8;
 }
 
 .color-box {
   width: 400px;
   height: 200px;
-  background-color: #101321;
+  background-color: skyblue;
   border-radius: 20px;
   box-shadow: 3px 3px 1px 2px #fff;
 }
@@ -47,7 +52,7 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50% 50%;
-  box-shadow: 1px 1px 1px 2px #fff;
+  border: 5px solid #fff;
   cursor: pointer;
   transition: transform 0.5s;
 }
@@ -57,13 +62,17 @@ body {
 }
 
 .option-1 {
-  background-color: rgb(199, 149, 56);
+  background-color: indigo;
 }
 
 .option-2 {
-  background-color: #101321;
+  background-color: #bbb312;
 }
 
 .option-3 {
-  background-color: #7d5a5a;
+  background-color: skyblue;
+}
+
+.selected {
+  border: 5px solid grey;
 }
